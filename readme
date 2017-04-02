@@ -10,7 +10,7 @@ wget https://gist.github.com/siyisiyi/10bc535464d4d831f5e8a9feed0e0e8c/raw/b2de2
 	
 #!/usr/bin/python
 
-chomd a+x hostloc.py
+chmod a+x hostloc.py
 
 
 echo "0 0 * * * root /root/hostloc.py >/dev/null 2>&1" >>/etc/crontab
