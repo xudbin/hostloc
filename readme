@@ -1,0 +1,13 @@
+1
+2
+pip install requests
+pip install bs4
+
+
+wget https://gist.github.com/siyisiyi/10bc535464d4d831f5e8a9feed0e0e8c/raw/b2de204854263c74a87b6c169648e269d1c2ff2b/hostloc.py
+
+#脚本第一行加上
+	
+#!/usr/bin/python
+
+
