@@ -1,21 +1,24 @@
 	
 #!/usr/bin/python
-
-# hostloc
 #encoding=utf-8
 import requests
 from bs4 import BeautifulSoup
 import re
 import sys
 import datetime
+
+
 uid="11111"   #用户名
 pwd="11111"   #密码
+
+
 http = requests.Session()
 http.headers.update({
     'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
     ,'Accept-Language':"zh-CN,zh;q=0.8,ko;q=0.6,zh-TW;q=0.4"
 })
 #http.proxies = {"http":"http://127.0.0.1:8080","https":"http://127.0.0.1:8080"}
+
 ##打开登陆界面
 res=http.get("http://www.hostloc.com/member.php?mod=logging&action=login&infloat=yes&handlekey=login&inajax=1&ajaxtarget=fwin_content_login")
 match=re.search(r'name="formhash" value="(\S+)"',res.text)
