@@ -1,5 +1,6 @@
-1
-2
+# 安装pip
+sudo yum -y install python-pip
+
 pip install requests
 pip install bs4
 
