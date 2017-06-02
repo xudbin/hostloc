@@ -1,3 +1,20 @@
+#
+youtube.com
+porn
+video
+
+# 添加屏蔽规则
+iptables -I OUTPUT -m string --string "baidu.com" --algo bm -j DROP
+
+# 删除屏蔽规则，上面添加的代码是什么样，那么删除的代码就是把 -I 改成 -D 
+iptables -D OUTPUT -m string --string "baidu.com" --algo bm -j DROP
+
+
+#
+
+
+
+
 # 安装pip
 sudo yum -y install python-pip
 
