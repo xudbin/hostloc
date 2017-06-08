@@ -1,3 +1,15 @@
+# 解决 ssh 卡顿 
+https://linux.cn/article-5851-1.html
+
+vi /etc/ssh/sshd_config
+### 普通用户权限不够，需要root权限
+### 找到GSSAPIAuthentication yes，修改为
+### GSSAPIAuthentication no
+
+service sshd restart
+
+
+
 #
 youtube.com
 porn
