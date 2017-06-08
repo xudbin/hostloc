@@ -2,6 +2,7 @@
 youtube.com
 porn
 video
+media
 
 # 添加屏蔽规则
 iptables -I OUTPUT -m string --string "baidu.com" --algo bm -j DROP
